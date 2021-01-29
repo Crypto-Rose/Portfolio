@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'STAY';
+  src: local("STAY"), url(../font/STAY.otf) format("truetype"); }
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: local("CaviarDreams"), url(../font/CaviarDreams.ttf) format("truetype"); }
+
+body {
+  background-image: url(../images/fondos.png);
+  background-size: cover; }
+
+._menu {
+  font-family: 'CaviarDreams';
+  transform: rotate(-90deg);
+  margin-top: 83vh;
+  font-size: 12px; }
+  ._menu ul {
+    display: flex;
+    list-style: none; }
+    ._menu ul li {
+      color: white;
+      display: inline-block;
+      margin-left: 30px; }
+
+._home::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #ff16f8;
+  position: absolute;
+  bottom: 0.8vh;
+  left: 67%;
+  border-radius: 10px;
+  transition: all 500ms ease; }
+
+._home:hover::after {
+  left: 79%;
+  width: 60%; }
+
+._about::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #1dca08;
+  position: absolute;
+  bottom: 0.8vh;
+  left: 67%;
+  border-radius: 10px;
+  transition: all 500ms ease; }
+
+._about:hover::after {
+  left: 13.3vh;
+  width: 60%; }
+
+._project::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #2477f5;
+  position: absolute;
+  bottom: 0.8vh;
+  left: 67%;
+  border-radius: 10px;
+  transition: all 500ms ease; }
+
+._project:hover::after {
+  left: 20.1vh;
+  width: 87%; }
+
+._contact::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #efff00;
+  position: absolute;
+  bottom: 0.8vh;
+  left: 67%;
+  border-radius: 10px;
+  transition: all 500ms ease; }
+
+._contact:hover::after {
+  left: 29.4vh;
+  width: 81%; }
+
+._firstPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  text-align: center;
+  color: white;
+  font-family: 'STAY';
+  font-weight: bold; }
+
+._secondPart {
+  margin-top: 8%; }
+
+._imgMe {
+  width: 72%;
+  float: right;
+  margin-right: 10%; }
+
+._button {
+  background: linear-gradient(to right, #d81d1d, #b57808) !important;
+  box-shadow: -2px 2px 0px 1px white !important;
+  border-color: #fff !important;
+  transition: 1s ease; }
+  ._button:hover {
+    box-shadow: none !important; }
